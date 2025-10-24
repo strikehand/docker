@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  apisix-auth-mapper:
+    image: apisix-auth-mapper:latest
+    container_name: apisix-auth-mapper
+    ports:
+      - "8080:8080"
+    environment:
+    restart: unless-stopped
